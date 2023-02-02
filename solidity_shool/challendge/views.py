@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    template = 'base.html'
+    template = 'challendge/index.html'
     title = 'Последние обновления на сайте'
     context = {
         'title': title,
@@ -18,19 +18,49 @@ def challendge(request):
     return render(request, template, context)
 
 def challendge_one(request):
-    pass
+    template = 'base.html'
+    title = 'Последние обновления на сайте'
+    context = {
+        'title': title,
+    }
+    return render(request, template, context)
 
 def leaderboard(request):
-    pass
+    template = 'base.html'
+    title = 'Последние обновления на сайте'
+    context = {
+        'title': title,
+    }
+    return render(request, template, context)
 
-def subscribe(request):
-    pass
+def price(request):
+    template = 'base.html'
+    title = 'Последние обновления на сайте'
+    context = {
+        'title': title,
+    }
+    return render(request, template, context)
 
 def resources(request):
-    pass
+    template = 'base.html'
+    title = 'Последние обновления на сайте'
+    context = {
+        'title': title,
+    }
+    return render(request, template, context)
 
 def account(request):
-    pass
+    template = 'base.html'
+    title = 'Последние обновления на сайте'
+    context = {
+        'title': title,
+    }
+    return render(request, template, context)
 
 def contact(request):
-    pass
+    template = 'base.html'
+    title = 'Последние обновления на сайте'
+    context = {
+        'title': title,
+    }
+    return render(request, template, context)

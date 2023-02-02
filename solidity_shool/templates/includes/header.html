@@ -1,37 +1,25 @@
 {% load static %}
 <header>
-  <nav class="navbar navbar-light" style="background-color: #27262e">
+  <nav class="navbar navbar-light" style="background-color: #052030">
     <div class="container">
       <a class="navbar-brand" href="">
-        <img src="{% static 'logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
+        <img src="{% static 'img/logo.png' %}" width="30" height="30" class="d-inline-block align-top" alt="">
         <span style="color:#30ef01">Solidity</span><span style="color:#ffffff">sсhool</span>
       </a>
-      {% comment %}
-      Меню - список пунктов со стандартными классами Bootsrap.
-      Класс nav-pills нужен для выделения активных пунктов
-      {% endcomment %}
       <ul class="nav nav-pills">
         {% with request.resolver_match.view_name as view_name %}
         <li class="nav-item">
+          <a class="nav-link {% if view_name  == 'challendge:leaderboard' %}active{% endif %}"
+            href="{% url 'challendge:leaderboard' %}">Таблица лидеров</a>
         </li>
         <li class="nav-item">
-        </li>
-        {% if request.user.is_authenticated %}
-        <li class="nav-item">
-        </li>
-        <li class="nav-item">
+          <a class="nav-link {% if view_name  == 'challendge:price' %}active{% endif %}"
+            href="{% url 'challendge:price' %}">Цены</a>
         </li>
         <li class="nav-item">
+          <a class="nav-link {% if view_name  == 'challendge:resources' %}active{% endif %}"
+            href="{% url 'challendge:resources' %}">Ресурсы</a>
         </li>
-        <li>
-          Пользователь: {{ user.username }}
-        </li>
-        {% else %}
-        <li class="nav-item">
-        </li>
-        <li class="nav-item">
-        </li>
-        {% endif %}
         {% endwith %}
       </ul>
     </div>
