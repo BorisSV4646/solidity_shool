@@ -2,7 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 
 def index(request):
-    template = 'challendge/index.html'
+    template = 'index.html'
     title = 'Последние обновления на сайте'
     context = {
         'title': title,

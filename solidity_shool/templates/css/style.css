@@ -1,0 +1,23 @@
+.image_raunded {
+  width: 60%;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(26, 9, 9, 0.4);
+  padding: 0.6em;
+  margin-bottom: 1em;
+}
+
+.yourbox {
+  position: absolute;
+  left: 93%;
+  top: 1;
+}
+
+.active {
+  background-color: #0d6dfd;
+  border-radius: 1em;
+}
+
+.btn-outline-success {
+  background-color: #0d6dfd;
+  color: aliceblue;
+}
