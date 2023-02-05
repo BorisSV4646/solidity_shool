@@ -21,3 +21,15 @@
   background-color: #0d6dfd;
   color: aliceblue;
 }
+
+.my_body {
+  background-color: #2b3035;
+}
+
+.my_menu {
+  color: white;
+}
+
+.my_menu:hover {
+  color: #0d6dfd;
+}
