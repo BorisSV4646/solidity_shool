@@ -34,7 +34,7 @@ def leaderboard(request):
     return render(request, template, context)
 
 def price(request):
-    template = 'base.html'
+    template = 'price.html'
     title = 'Последние обновления на сайте'
     context = {
         'title': title,
