@@ -71,3 +71,8 @@
   margin-top: 50px;
   margin-block-end: 60px;
 }
+
+.my_img {
+  width: 95%;
+  border-radius: 20%;
+}
