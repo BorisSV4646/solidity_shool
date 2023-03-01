@@ -76,3 +76,11 @@
   width: 95%;
   border-radius: 20%;
 }
+
+.ul-yt {
+  list-style-type: "🔴";
+}
+
+.ul-tg {
+  list-style-type: "🔵";
+}
